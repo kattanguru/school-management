@@ -1,4 +1,4 @@
-package com.nisum.school.management.repository;
+package com.nisum.school.management.repository.user;
 
 import com.google.cloud.spring.data.firestore.FirestoreReactiveRepository;
 import com.nisum.school.management.model.User;

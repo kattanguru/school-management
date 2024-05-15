@@ -1,7 +1,8 @@
-package com.nisum.school.management.service;
+package com.nisum.school.management.service.impl;
 
 import com.nisum.school.management.model.User;
-import com.nisum.school.management.repository.UserRepository;
+import com.nisum.school.management.repository.user.UserRepository;
+import com.nisum.school.management.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
