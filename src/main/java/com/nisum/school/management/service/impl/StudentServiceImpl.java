@@ -13,8 +13,11 @@ import reactor.core.publisher.Mono;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-    @Autowired
     private StudentRepository studentRepository;
+
+    public StudentServiceImpl(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
 
     public Flux<Student> getStudents() {
         log.debug("START :: Retrieve Students Details");
